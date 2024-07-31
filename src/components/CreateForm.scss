@@ -1,0 +1,115 @@
+$new-ele : rgb(219, 216, 216);
+
+%box-setup{
+    text-align: center;
+    padding: 30px;
+    width: 80%;
+    margin: 25px 5%;
+    border-radius: 20px;
+}
+
+.head{
+    font-family: "Times New Roman", Times, serif;
+    @extend %box-setup;
+    background-color: rgb(213, 233, 250);
+
+    input{
+        width: 80%;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px;
+        border-width: 1px;
+    }
+    textarea{
+        padding: 10px;
+        color: grey;
+        width: 80%;
+    }
+
+}
+::placeholder{
+    color: rgb(248, 98, 98);
+    font-size: larger;
+}
+
+.mcq{
+    @extend %box-setup;
+    background-color: $new-ele;
+    justify-content: center; 
+    align-self: center;
+    width: 80%;
+    .qn{
+        width: 80%;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px;
+        border-width: 1px;
+    }
+    label{
+        margin: 0 4%;
+    }
+    input{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin: 0 0 0 10px;
+    
+    }
+    button{
+        padding: 20px 30%;
+        margin: 20px 10px;
+        border-radius: 5px;
+        border:none;
+        font-family: "Times New Roman", Times, serif;
+        font-size: xx-large ;
+
+    }
+    button:hover{
+        background-color: greenyellow;
+    }
+}
+
+.options{
+    margin:0 10%;
+    display: flex;
+    // justify-content: space-around;
+    gap: 0;
+    input{
+        padding: 10px;
+        width: 80%;
+        margin: 0 10px 0 0;
+    }
+    button{
+        padding:10px;
+        width: 25%;
+        margin: 0;
+    }
+}
+
+.newqn{
+    @extend %box-setup;
+    background-color: $new-ele;
+
+    button{
+        // padding: 40px;
+        width: 40%;
+        padding: 40px 0;
+        margin: 0 40px;
+        border-radius: 10px;
+        border: none;
+
+     }
+    
+}
+
+.left{
+    text-align: left;
+}
+
+.left li{
+    list-style-type: none;
+    margin-left: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+}
+

@@ -1,0 +1,36 @@
+:root{
+    --nav-back:rgb(232, 255, 127);
+    --nav-syn:red;
+    --nav-hover:rgb(215, 215, 215);
+    --nav-hover-syn:#ff8d8;
+}
+
+
+.nav{
+    padding: auto;
+
+    ul{
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        background-color: var(--nav-back);
+        li{
+            a{
+                color: var(--nav-syn);
+                text-decoration: none;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 1.5vw;
+                padding: 30px;
+            }
+            a:hover{
+                margin: 0;
+                background-color: var(--nav-hover);
+                padding: 30px;
+                color: var(--nav-hover-syn);
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+}
